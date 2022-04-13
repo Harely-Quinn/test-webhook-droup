@@ -1,3 +1,6 @@
-$http_code = intval(curl_getinfo($handle, CURLINFO_HTTP_CODE));
-  curl_close($handle);
-
+<?php
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
+  'chat_id' => $chatId,
+  'text' => 'Hello!',
+  , // <--- This is a syntax error. Imagine that we did it by mistake.
+]));
