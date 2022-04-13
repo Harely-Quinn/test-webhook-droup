@@ -5,7 +5,7 @@ $token = "1723005657:AAFxH-es1F5tWc6_ZQaMqVmpH1U5tMtVGkE";
 $update = json_decode(file_get_contents('php://input'), true);
 $chatId = $update['message']['chat']['id'] ?? $update['callback_query']['message']['chat']['id'] ?? '';
 
-register_shutdown_function(function () use($token, $chatId) {
+register_shutdown_function(function () use($token, $chatId) {{{
   if(http_response_code() != 200) {
     http_response_code(200);
 
