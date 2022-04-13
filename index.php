@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', 0);
 
-$token = "123456:etc";
+$token = "1723005657:AAFxH-es1F5tWc6_ZQaMqVmpH1U5tMtVGkE";
 $update = json_decode(file_get_contents('php://input'), true);
 $chatId = $update['message']['chat']['id'] ?? $update['callback_query']['message']['chat']['id'] ?? '';
 
