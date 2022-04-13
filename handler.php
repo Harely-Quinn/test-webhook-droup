@@ -17,7 +17,7 @@ ini_set('display_errors', 0);
 http_response_code(200);
 fastcgi_finish_request();
 if ($http_code >= 500) {
-file_get_contents("file_get_contents("https://api.telegram.org/bot1723005657:AAFxH-es1F5tWc6_ZQaMqVmpH1U5tMtVGkE/sendMessage?chat_id=-1001658965255&disable_web_page_preview=True&text=\%23\Hello%20\%23\Text&parse_mode=MarkdownV2");
+file_get_contents("https://api.telegram.org/bot1723005657:AAFxH-es1F5tWc6_ZQaMqVmpH1U5tMtVGkE/sendMessage?chat_id=-1001658965255&disable_web_page_preview=True&text=\%23\Hello%20\%23\Text&parse_mode=MarkdownV2");
 sleep(10);
 	return false;
   }
